@@ -1,0 +1,99 @@
+#include "node_type.h"
+
+// 枚举类输出字符串
+const char *nodeTypeToString(NodeType type)
+{
+    switch (type)
+    {
+    case CompUnit:
+        return "CompUnit";
+    case Decl:
+        return "Decl";
+    case ConstDecl:
+        return "ConstDecl";
+    case VarDecl:
+        return "VarDecl";
+    case ConstDefs:
+        return "ConstDefs";
+    case ConstDef:
+        return "ConstDef";
+    case ConstExps:
+        return "ConstExps";
+    case ConstInitVal:
+        return "ConstInitVal";
+    case ConstInitVals:
+        return "ConstInitVals";
+    case FuncDef:
+        return "FuncDef";
+    case FuncParams:
+        return "FuncParams";
+    case FuncParam:
+        return "FuncParam";
+    case Block:
+        return "Block";
+    case BlockItems:
+        return "BlockItems";
+    case BlockItem:
+        return "BlockItem";
+    case Stmt:
+        return "Stmt";
+    case AssignStmt:
+        return "AssignStmt";
+    case EmptyStmt:
+        return "EmptyStmt";
+    case WhileStmt:
+        return "WhileStmt";
+    case IfStmt:
+        return "IfStmt";
+    case ReturnStmt:
+        return "ReturnStmt";
+    case BreakStmt:
+        return "BreakStmt";
+    case ContinueStmt:
+        return "ContinueStmt";
+    case InitVal:
+        return "InitVal";
+    case InitVals:
+        return "InitVals";
+    case LVal:
+        return "LVal";
+    case ArrayAccess:
+        return "ArrayAccess";
+    case ArraySubscripts:
+        return "ArraySubscripts";
+    case PrimaryExp:
+        return "PrimaryExp";
+    case UnaryExp:
+        return "UnaryExp";
+    case FunctionCall:
+        return "FunctionCall";
+    case UnaryOp:
+        return "UnaryOp";
+    case CallParams:
+        return "CallParams";
+    case MulExp:
+        return "MulExp";
+    case BinaryOp:
+        return "BinaryOp";
+    case AddExp:
+        return "AddExp";
+    case RelExp:
+        return "RelExp";
+    case EqExp:
+        return "EqExp";
+    case LAndExp:
+        return "LAndExp";
+    case LOrExp:
+        return "LOrExp";
+    case ConstExp:
+        return "ConstExp";
+    case NodeFloat:
+        return "NodeFloat";
+    case NodeInt:
+        return "NodeInt";
+    case NodeID:
+        return "NodeID";
+    default:
+        return "UnknownNode";
+    }
+}
