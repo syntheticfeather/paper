@@ -1,8 +1,8 @@
-#include "node_type.h"
-#include "ast.h"
+#include "include/node_type.h"
+#include "include/ast.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include "token.h"
+#include "include/token.h"
 
 // past树节点的构造函数
 past newID(char *value)

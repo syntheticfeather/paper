@@ -11,9 +11,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "header1.h"
-#include "ast.h"
-#include "token.h"
+#include "include/header1.h"
+#include "include/ast.h"
+#include "include/token.h"
 
 extern int yylval;
 extern char *yytext;
